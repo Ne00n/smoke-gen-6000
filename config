@@ -1,0 +1,54 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of xxx Company.          Here you will learn all about the latency of our network.
+
++ World
+menu = World
+title = World
+
+++ Asia
+menu = Asia
+title = Asia
+    
++++ TOK2
+
+menu = TOK2 | Bla Bla
+title = TOK2 | Bla Bla
+host = 10.0.19.1
+
+++ Europe
+menu = Europe
+title = Europe
+    
++++ NLD1
+
+menu = NLD1 | Bla Blub
+title = NLD1 | Bla Blub
+host = 10.0.22.1
+
+++ Remote
+menu = Remote
+title = Remote
+
++++ Moscow
+menu = Moscow
+title = Moscow
+
+++++ TOK2
+
+menu = TOK2 | Bla Bla
+title = TOK2 | Bla Bla
+probe = RemoteFPing_MOW
+host = 10.0.19.1
+
+++++ NLD1
+
+menu = NLD1 | Bla Blub
+title = NLD1 | Bla Blub
+probe = RemoteFPing_MOW
+host = 10.0.22.1
+

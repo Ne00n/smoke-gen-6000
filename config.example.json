@@ -1,0 +1,13 @@
+{
+  "targets": {
+   "Asia":{
+      "TOK2":{"title":"TOK2 | Bla Bla","target":"10.0.19.1"}
+    },
+    "Europe":{
+      "NLD1":{"title":"NLD1 | Bla Blub","target":"10.0.22.1"}
+    }
+  },
+  "remotes": {
+     "Moscow": {"title":"Moscow","probe":"RemoteFPing_MOW"}
+  }
+}
