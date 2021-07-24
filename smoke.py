@@ -14,20 +14,17 @@ title = Network Latency Grapher
 remark = Welcome to the SmokePing website of xxx Company. \
          Here you will learn all about the latency of our network.
 
-+ World
-menu = World
-title = World
 
 '''
 
 for target,targets in config['targets'].items():
-    file += '''++ '''+target+'''
+    file += '''+ '''+target+'''
 menu = '''+target+'''
 title = '''+target+'''
     '''
     for destination,data in targets.items():
         file += '''
-+++ '''+destination+'''
+++ '''+destination+'''
 
 menu = '''+data['title']+'''
 title = '''+data['title']+'''
@@ -35,26 +32,26 @@ host = '''+data['target']+'''
 
 '''
 
-file += '''++ Remote
+file += '''+ Remote
 menu = Remote
 title = Remote
 
 '''
 
 for remote,data in config['remotes'].items():
-    file += '''+++ '''+remote+'''
+    file += '''++ '''+remote+'''
 menu = '''+data['title']+'''
 title = '''+data['title']+'''
 
 '''
     for target,targets in config['targets'].items():
-        file += '''++++ '''+target+'''
+        file += '''+++ '''+target+'''
 menu = '''+target+'''
 title = '''+target+'''
 
 '''
         for destination,details in targets.items():
-            file += '''+++++ '''+destination+'''
+            file += '''++++ '''+destination+'''
 
 menu = '''+details['title']+'''
 title = '''+details['title']+'''
