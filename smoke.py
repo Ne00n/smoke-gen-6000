@@ -48,8 +48,13 @@ title = '''+data['title']+'''
 
 '''
     for target,targets in config['targets'].items():
+        file += '''++++ '''+target+'''
+menu = '''+target+'''
+title = '''+target+'''
+
+'''
         for destination,details in targets.items():
-            file += '''++++ '''+destination+'''
+            file += '''+++++ '''+destination+'''
 
 menu = '''+details['title']+'''
 title = '''+details['title']+'''
