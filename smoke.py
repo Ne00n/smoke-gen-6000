@@ -60,5 +60,5 @@ host = '''+details['target']+'''
 
 '''
 
-with open("config", 'w') as out:
+with open("Targets", 'w') as out:
     out.write(file)
