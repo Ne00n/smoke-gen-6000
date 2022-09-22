@@ -29,7 +29,7 @@ title = '''+target+'''
 menu = '''+data['title']+'''
 title = '''+data['title']+'''
 host = '''+data['target']+'''
-alerts = startloss,bigloss,rttdetect,hostdown
+alerts = startloss,someloss,bigloss,rttdetect,hostdown,lossdetect
 
 '''
 
