@@ -61,5 +61,11 @@ host = '''+details['target']+'''
 
 '''
 
+with open('static') as f:
+    lines = f.readlines()
+
+for line in lines:
+    file += line
+
 with open("Targets", 'w') as out:
     out.write(file)
